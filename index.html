@@ -1,0 +1,295 @@
+
+<head>
+    <title>Kyle Cheng</title>
+
+	<meta name="author" content="Kyle Cheng" />
+	<meta name="keywords" content="game design, game programming, graphics, procedural generation, procedural cities, unity, ray tracing, student, game, programming, coding, code, williams, williams college" />
+	<meta name="description" content="Gallery of work by Kyle Cheng" />
+	<meta name="robots" content="all" />
+
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />	
+
+    <link rel="stylesheet" type="text/css" title="style" href="style.css" />
+    <link rel="stylesheet" type="text/css" title="style" href="mtb.css" />
+
+    <!--
+	<script language="javascript" src="XHConn.js"></script>
+	<script language="javascript">
+		var section = "";
+		var sort = "Date";
+
+		window.onload = function() { SetTags(); }
+		
+    var a_t__ = "&#" + Math.pow(2,6);
+    var up = "marc";
+    var nieeet = "marctenbosch.com";
+    var b="";
+    
+		function Get()
+		{
+			SetLoading();
+			var xhcon = new XHConn("action.php");
+			var args = "section=" + section + "&sort=" + sort;
+			xhcon.connect( "GET", args, function(XML){SetContents(XML)} );
+		}
+		function SetContents(XML) 
+		{
+			document.getElementById("contents").innerHTML = XML.responseText;
+		}
+		function SetTags()
+		{
+			document.getElementById("type2").innerHTML = document.getElementById("type2Hidden").innerHTML; 
+		}
+		function SetLoading()
+		{
+			document.getElementById("contents").innerHTML = '<div id="contents_loading"><img id="loading" src="loading.gif" /></div>';
+		}
+		function SetSection(new_section)
+		{
+			section = new_section;
+
+			Get();
+			if ( section == '' )
+				document.getElementById("sort").style.display = '';
+			else
+				document.getElementById("sort").style.display = 'none';
+		}
+		function SetContact()
+		{
+			document.getElementById("contents").innerHTML = 
+				'<a class="largelink" href="m'+b+'ai'+b+'lto:' + up + a_t__+b + nieeet + '">Email</a><br /><a class="largelink" href="https://twitter.com/marctenbosch" >Twitter</a>';
+				for (i = 0; i < 60; ++i)
+					document.getElementById("contents").innerHTML = document.getElementById("contents").innerHTML + '<br />';
+		}
+		
+		function SetSort(new_sort)
+		{
+			sort = new_sort;
+			Get();
+		}
+		function Select(a,type)
+		{
+			// if selected deselect
+			var futureClassName = 'selected';
+			if ( a.className == 'selected' && type == 'linktype2' )
+				futureClassName = '';
+
+			// reset
+			var types = document.getElementsByName(type);
+			for ( i = 0; i < types.length; ++i )
+			{
+				types[i].className = '';
+			}
+			
+			// set
+			a.className = futureClassName;
+		}
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19253442-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+    	</script>
+
+</head>
+-->
+
+<body>
+
+
+<div id="main">
+<h1>Graphics Gallery 2014</h1>
+
+<div id="endmenu">
+
+<!--
+<div id="sort">Sort:
+<a href="javascript:SetSort('Type')" onclick="Select(this,'linksort')" name="linksort">Type</a> | 
+<a href="javascript:SetSort('Date')" class="selected" onclick="Select(this,'linksort')" name="linksort">Date</a></div>
+<div id="type1">
+<a href="javascript:SetSection('')" class="selected" onclick="Select(this,'linktype1')" name="linktype1">All</a> | 
+<a href="javascript:SetSection('Games')" onclick="Select(this,'linktype1')" name="linktype1">Games</a> | 
+<a href="javascript:SetSection('Prototypes')" onclick="Select(this,'linktype1')" name="linktype1">Prototypes</a> | 
+<a href="javascript:SetSection('Publications')" onclick="Select(this,'linktype1')" name="linktype1">Publications</a> | 
+<a href="javascript:SetSection('Projects')" onclick="Select(this,'linktype1')" name="linktype1">Projects</a> | 
+<a href="javascript:SetSection('Websites')" onclick="Select(this,'linktype1')" name="linktype1">Websites</a> | 
+<a href="javascript:SetContact()" onclick="Select(this,'linktype1')" name="linktype1">Contact</a> | 
+<a href="/news/">Blog</a> </div>
+-->
+
+</div>
+
+<p>
+Hi!  My name is Kyle Cheng and I am currently a senior Computer Science major at Williams college looking for a job starting May 2016. 
+</p>
+
+<p>
+This website showcases the work I did fall 2014 in <a href="http://graphics.cs.williams.edu/courses/cs371/f14/"> Computational Graphics </a> under <a href="http://cs.williams.edu/~morgan/"> Morgan McGuire </a> - my first class in the field.  All of the below work was created with code.  
+</p>
+
+<p>
+Contact: kylcheng@gmail.com 
+</p>
+
+&nbsp
+
+<iframe src="//www.youtube.com/embed/OfLvZGvlL48"></iframe>
+
+&nbsp
+&nbsp
+
+
+<div id="contents">
+<div class="item">
+
+	<h3> CyberPunk </h3>
+
+	<iframe src="//www.youtube.com/embed/2qaVXo3uzqY"></iframe>
+
+
+	<p>
+I worked as the leader of a 9 person team that procedurally generated cyberpunk cities.  Our work was inspired by <a href="http://peterwonka.net/Publications/pdfs/2006.SG.Mueller.ProceduralModelingOfBuildings.final.pdf"> Peter Wonka's procedural building generation. </a>  Every building was generated using our python scripts.  The large city layout was achieved by using Voronoi diagrams to place the buildings.  
+	</p>
+
+	<p>
+I was responsible for the art style and for generating the buildings that you can see below.  A context aware grammar constructs buildings by stacking rectangular boxes.  We spent a total of two and a half weeks on this project.      
+	</p>
+	
+	<p>
+Example of the three building styles: 
+	</p>
+  <img class="TriImgRow" src="CyberCity/Building0.png">
+  <img class="TriImgRow" src="CyberCity/Building3.png">
+  <img class="TriImgRow" src="CyberCity/Building4.png">
+
+	<p>
+Example of scalability: 
+	</p>
+
+  <img src="CyberCity/Building5.png" width=10% height=10%>
+  <img src="CyberCity/Building2.png" width=30% height=20%>
+  <img src="CyberCity/Building1.png" width=30% height=40%>
+
+	<p>
+For more details check out
+
+<a href="CyberCity/CyberpunkCityPowerpoint.html"> the powerpoint </a>
+
+or the
+
+<a href="midterm-DK3TM/build/doc/index.html"> project report and journal documentation  </a> 
+
+	</p>
+
+
+
+</div><div class="item">
+
+	<h3> Nuagic </h3>
+
+
+<iframe src="//www.youtube.com/embed/tkf5OcS3MVg"></iframe>
+
+	<p>
+I worked solo for four weeks on this project.  I taught myself about Unity and the fundamentals of multiplayer synchronization and later used my new knowledge to tackle synchronization problems that were unique to my game.  I was inspired by the art style of "Limbo" and made extensive use of Photoshop and particle systems to get a similar style in my game. 
+	</p>     
+
+	<p>
+The bulk of my time was spent on getting multiplayer synchronization to work.  Network messages are expensive and all messages are ~100ms old due to internet speeds, so basic game objects such as projectiles need special consideration.  In my game, all projectile positions are a function of time and each client has different views of projectiles to compensate for the ~100ms delay to send messages over the internet. 
+	</p>
+
+	<p>
+For more details check out
+
+<a href="Nuagic/NuagicPowerpoint.html"> the powerpoint </a>
+
+or the very detailed <a href="final-limbonuauts/build/doc/index.html"> project report and journal documentation  </a>.  Lastly, check out the gameplay trailer below: 
+	</p>
+
+<iframe src="//www.youtube.com/embed/7zuOlpzMEFo"></iframe>
+
+</div><div class="item">
+
+	<h3> CY-DEF </h3>
+
+	<iframe src="//www.youtube.com/embed/-HYz-t7S7oM" ></iframe>
+
+    <p>
+CyDef is a tower defense meets Minecraft game.  We were a team of two and created this game from scratch in C++ over the course of two weeks.  Our 3D grid system made our game conducive to ai which were programmed to run limited BFS or make context aware movement/attack choices.  The Tron-like art style was achieved by implementing the Sobel filter in GLSL.       
+    </p>
+
+    <p>
+For more details check out the 
+<a href="rasterization-DiscoBall/build/doc/index.html"> project report and journal documentation  </a> 
+    </p>
+
+
+</div><div class="item">
+	<h3> Atomic </h3>
+
+<iframe src="//www.youtube.com/embed/yeJeORIZ_Lc"></iframe>
+
+	<p>
+Atomic was rendered in the GPU using implicit surface equations.  I was inspired by the infinite city in the short film <a href="https://www.youtube.com/watch?v=lwFVlNytq0Q"> Timeless </a>.  I experimented extensively with mod operations on the cast ray to generate a city that was infinite but not too uniform.  The central explosion effect was achieved by blending the city's color and geometry with an expanding sphere. I spent a week on this project. 
+	</p>
+
+    <p>
+For more details check out the 
+<a href="gpu-16ksc2/build/doc/index.html"> project report and journal documentation  </a> 
+    </p>
+
+</div><div class="item">
+
+    <h3> Raytracers </h3>
+
+<iframe src="//www.youtube.com/embed/IQFv5aaXhhU"></iframe>
+
+    <p>
+The above video was created using a custom raytracer made in a group of three.  
+    </p>
+    <p>
+The below images were created by our recursive raytracer.  The water was created by a random art generator program I made in a previous class that I converted from ML into C++.  I modified the program so that it would create random art over time.  The end result was water like ripples for certain random art functions.  
+    </p>
+
+  <img src="Raytracing/Raytracer0.png" width=50% height=30%>
+  <img src="Raytracing/Raytracer1.png" width=49% height=30%>
+
+    <p>
+For more details check out the 
+<a href="eyerays-blue/build/doc/index.html"> project report and journal documentation for raytracing </a> 
+and the 
+<a href="recursive-Mattisa/build/doc/index.html"> project report and journal documentation for recursive raytracing </a> 
+
+    </p>
+
+
+
+    
+
+</div><div class="item">
+
+	<h3> Spirals </h3>
+
+<iframe src="//www.youtube.com/embed/fia8eaEtA7Y"></iframe>
+
+	<p>
+My first foray into graphics.  We were told to create a scene using cubes by creating a G3D scene file.  I was particularly inspired by the abstract short films such as Phase by Yasuhiro Kobari.  To create the spirals, I made a script that generated G3D scene files.  I spent a week on this project. 
+	</p>
+
+    <p>
+For more details check out the 
+<a href="cubes-16ksc2/build/doc/index.html"> project report and journal documentation </a>
+    </p>
+
+
+
+</div>
+</div>
+</body>
+</html>

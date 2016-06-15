@@ -1,0 +1,1 @@
+\form#0:\[ \frac{df(x)}{dx} = \lim_{x \to 0} \left[ \frac{f(x+h)-f(x-h)}{2h} \right] \]
